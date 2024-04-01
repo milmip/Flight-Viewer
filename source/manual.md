@@ -9,3 +9,10 @@ Dans le dossier parent de l'application, `FlightViewer_1.0/`, l'utilisateur disp
   2. L'utilisateur pourra jouer avec certains paramètres du logiciel via le fichier `config.toml`.
   3. Finalement l'utilisateur lance le programme en exécutant le script `launch.sh`, dans un terminal ou avec un _clic droit_, _Exécuter comme un programme_.
 
+
+```{figure} figure/Capture1.png
+---
+width: 100%
+---
+Une légende
+```
