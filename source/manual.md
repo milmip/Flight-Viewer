@@ -19,4 +19,15 @@ pip install PyOpenGL, numpy, pygame
 ```
 
 ## Flight Viewer
-Une fois qu'on a placé le fichier qu'on désire au bon endroit, on lance le programme d'une des manière exposé plus haut.
+Une fois qu'on a placé le fichier qu'on désire au bon endroit, on lance le programme d'une des manière exposé plus haut. (Les utilisateurs qui possèdent encore un OS dont le terminal ne travail pas avec _bash_ trouveront le moyen de lancer le fichier `FlightViewer_1.0/app/main.py` avec `python3`.)
+
+Le logiciel se met à charger, une fenêtre journalière de terminal s'ouvre.
+
+L'utilisateur accède au panneau de commandes en tapant {kbd}`h`. Voici un résumé ici:
+  * pour se mouvoir dans le plan, taper {kbd}`a`{kbd}`s`{kbd}`d`{kbd}`w`.
+  * pour monter/descendre, taper {kbd}`space`{kbd}`alt`.
+  * pour orienter la caméra, bouger la souris.
+  * pour zoomer/dézoomer la minimap, taper {kbd}`q`{kbd}`e`.
+  * pour cacher/montrer la minimap, taper {kbd}`c`.
+  * pour montrer/cacher le relief étandu, taper {kbd}`v`. (Par soucis de fluidité, il est conseillé de se mouvoir en affichant le minimum de relief.)
+  * pour quitter, taper {kbd}`alt` + {kbd}`f4`.
