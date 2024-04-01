@@ -1,7 +1,7 @@
 ..  Documentation du projet - CSUD template
     
 
-Titre du projet (changer dans `source/index.rst`)
+Documentation, Flight Viewer
 =================================
 
 ..  toctree::
@@ -10,6 +10,7 @@ Titre du projet (changer dans `source/index.rst`)
 
     plan.md
     presentation.md
+    manual.md
     critique.md
     references.rst
 
