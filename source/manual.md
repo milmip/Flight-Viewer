@@ -15,7 +15,7 @@ width: 50%
 ```
 Avant de continuer, l'utilisateur aura pris le soin de télécharger les modules requis à **Flight Viewer** grâce à la commande suivante exécutée dans un terminal: 
 ```{code} bash
-pip install PyOpenGL, numpy, pygame
+pip install PyOpenGL, numpy, pygame, toml
 ```
 
 ## Flight Viewer
