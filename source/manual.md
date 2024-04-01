@@ -18,7 +18,5 @@ Avant de continuer, l'utilisateur aura pris le soin de télécharger les modules
 pip install PyOpenGL, numpy, pygame
 ```
 
-In the [](#my-program), we create a mesh for simulation using [SimPEG](https://discretize.simpeg.xyz/).
-
 ## Flight Viewer
 Une fois qu'on a placé le fichier qu'on désire au bon endroit, on lance le programme d'une des manière exposé plus haut.
