@@ -9,7 +9,7 @@ class DocumentInfos:
     seminary_title = u'Projet OCI'
     tutor = u"Cédric Donner"
     release = "(Version finale)"
-    repository_url = "https://github.com/milmip/<reponame>"
+    repository_url = "https://github.com/milmip/Flight-Viewer"
 
     @classmethod
     def date(cls):
