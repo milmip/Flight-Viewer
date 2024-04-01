@@ -20,3 +20,4 @@ app
  └── track
 ```
 
+Expliquons dans les grandes lignes ce que fais notre programme. Tout commence dans `main.py`. On 
