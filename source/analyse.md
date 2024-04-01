@@ -77,3 +77,29 @@ data_of_tile01 = [[a, b],
 idx_triangles = [[(0,0), (0,1), (1,1)], #pour (a, b, d)
                  [(0,0), (1,0), (1,1)]] #pour (a, c, d)
 ```
+Ainsi avec cet exemple, il est facile de dessiner la topographie de la `tile01` :
+```{code} python
+glBegin(GL_TRIANGLES)
+
+for idx_tri in idx_triangles:
+    i1 = idx_tri[0]
+    i2 = idx_tri[1]
+    i3 = idx_tri[2]
+
+    p1 = data_of_tile01[ i1[0] ][ i1[1] ]
+    p2 = data_of_tile01[ i2[0] ][ i2[1] ]
+    p3 = data_of_tile01[ i3[0] ][ i3[1] ]
+
+    glColor3fv(?)
+
+    glVertex3fv(p1)
+    glVertex3fv(p2)
+    glVertex3fv(p3)
+
+glEnd()
+```
+Notre code fait exactement ceci, avec de plus grand nombre et un algorithme (pas détaillé ici) qui crée la liste `idx_triangles` suivant _n_, la taille du tableau.
+
+Reste encore `glColor3fv(?)`, ou comment calculer la couleur en fonction de l'orientation du triangle. Ceci est finalement simple. On calcule le vecteur normal à celui-ci; avec le produit vectoriel entre les vecteurs P{sub}`1`P{sub}`2` et P{sub}`1`P{sub}`3` (si P{sub}`1-3` sont les points du triangle). On calcule ensuite le vecteur P{sub}`1`L (si L est la position de la lumière) puis à l'aide du produit scalaire entre P{sub}`1`L et le vecteur normal, on en déduit l'angle que fait notre surface avec un rayon lumineux. Plus cet angle se rapproche de 90°, plus la luminosité du triangle est vive.
+
+Ainsi on finit par enregistrer tout ça de sorte à ne plus avoir à faire de calcul durant l'exécution du logiciel. 
