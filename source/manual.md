@@ -7,12 +7,18 @@ Evidemment, l'utilisateur doit impérativement enregistrer son vol. Sur le site 
 Dans le dossier parent de l'application, `FlightViewer_1.0/`, l'utilisateur dispose de trois choses utiles: 
   1. Le dossier `my_flights/` pour qu'il y dispose les vols `.igc` qu'il souhaite voir. Il doit y figurer au moins un vol pour que l'application se lance. Maximum 20 vols !
   2. L'utilisateur pourra jouer avec certains paramètres du logiciel via le fichier `config.toml`.
-  3. Finalement l'utilisateur lance le programme en exécutant le script `launch.sh`, dans un terminal ou avec un _clic droit_, _Exécuter comme un programme_.
-
+  3. Finalement l'utilisateur lance le programme en exécutant le script `launch.sh`, dans un terminal ou avec un _clic droit_, _Exécuter comme un programme_. **Attention à bien rendre le fichier exécutable**.
 
 ```{figure} figure/Capture1.png
 ---
-width: 100%
----
-Une légende
+width: 50%
 ```
+Avant de continuer, l'utilisateur aura pris le soin de télécharger les modules requis à **Flight Viewer** grâce à la commande suivante exécutée dans un terminal: 
+```{code} bash
+pip install PyOpenGL, numpy, pygame
+```
+
+In the [](#my-program), we create a mesh for simulation using [SimPEG](https://discretize.simpeg.xyz/).
+
+## Flight Viewer
+Une fois qu'on a placé le fichier qu'on désire au bon endroit, on lance le programme d'une des manière exposé plus haut.
