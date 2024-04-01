@@ -5,21 +5,14 @@ Documentation, Flight Viewer
 =================================
 
 ..  toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Table des matières
 
-    plan.md
     presentation.md
     manual.md
+    analyse.md
     critique.md
     references.rst
-
-
-..  toctree::
-    :maxdepth: 2
-    :caption: Tutoriel Sphinx
-
-    tutoriel-sphinx/index.rst
 
 
 ..
