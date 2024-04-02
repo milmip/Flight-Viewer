@@ -111,7 +111,7 @@ Une difficulté majeure à laquelle j'ai dû faire face est un problème algorit
 
 ```{figure} figure/capture2.png
 ---
-width: 40%
+width: 50%
 ```
 
 C'est bien logique. Comme nous dessinons tuile par tuile, il faudrait qu'il y a ait de la redondance dans les données de SwissALTI3D pour que nos tuiles soient connectées. La solution qui paraissait être la plus optimale était d'aller nous-même modifier les fichiers "tuile". On pourrait donc créer cette redondance (ajouter une ligne et une colonne de points) pour que nos tuiles soient connectées dans **Flight Viewer**. 
