@@ -105,10 +105,17 @@ Reste encore `glColor3fv(?)`, ou comment calculer la couleur en fonction de l'or
 Ainsi on finit par enregistrer tout ça de sorte à ne plus avoir à faire de calcul durant l'exécution du logiciel. 
 
 
-## Présentation d'une difficultée rencontrée
+## Présentation d'une difficulté rencontrée
 
-Une difficultée majeure à laquelle j'ai dû faire face est un problème algoritmique dans le parthing des fichiers "tuile" de swissALTI3D. Après avoir extrait les fichiers de reliefs et avoir codé la partie _dessin du relief_ (ce qui a été exposé juste en dessus), **Flight Viewer** nous offre cette vue :
+Une difficulté majeure à laquelle j'ai dû faire face est un problème algorithmique dans le parthing des fichiers "tuile" de swissALTI3D. Après avoir extrait les fichiers de reliefs et avoir codé la partie _dessin du relief_ (ce qui a été exposé juste en dessus), **Flight Viewer** nous offre cette vue :
 
+```{figure} figure/capture2.png
+---
+width: 40%
+```
 
+C'est bien logique. Comme nous dessinons tuile par tuile, il faudrait qu'il y a ait de la redondance dans les données de SwissALTI3D pour que nos tuiles soient connectées. La solution qui paraissait être la plus optimale était d'aller nous-même modifier les fichiers "tuile". On pourrait donc créer cette redondance (ajouter une ligne et une colonne de points) pour que nos tuiles soient connectées dans **Flight Viewer**. 
+
+C'est à cet endroit que j'ai perdu beaucoup de temps, car je pensais y arriver facilement. Mais c'était plus compliqué que cela car pour étendre chaque tuiles, il fallut aller chercher dans trois autres fichiers les bonnes lignes, en n'étant pas toujours sûr que ces fichiers existent, ... Avec le recul, j'aurais dû partir d'un problème plus simple, généraliser mon code pour des fichiers plus grands, faire des tests; j'aurais pu gagner du temps.
 
 
