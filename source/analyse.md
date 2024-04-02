@@ -103,3 +103,11 @@ Notre code fait exactement ceci, avec de plus grands nombres et un algorithme (p
 Reste encore `glColor3fv(?)`, ou comment calculer la couleur en fonction de l'orientation du triangle. Ceci est finalement simple. On calcule le vecteur normal à celui-ci; avec le produit vectoriel entre les vecteurs P{sub}`1`P{sub}`2` et P{sub}`1`P{sub}`3` (si P{sub}`1-3` sont les points du triangle). On calcule ensuite le vecteur P{sub}`1`L (si L est la position de la lumière) puis à l'aide du produit scalaire entre P{sub}`1`L et le vecteur normal, on en déduit l'angle que fait notre surface avec un rayon lumineux. Plus cet angle se rapproche de 90°, plus la luminosité du triangle est vive.
 
 Ainsi on finit par enregistrer tout ça de sorte à ne plus avoir à faire de calcul durant l'exécution du logiciel. 
+
+
+## Présentation d'une difficultée rencontrée
+
+Une difficultée majeure à laquelle j'ai dû faire face est un problème algoritmique dans le parthing des fichiers "tuile" de swissALTI3D. Après avoir extrait les fichiers de reliefs et avoir codé la partie _dessin du relief_ (ce qui a été exposé juste en dessus), **Flight Viewer** nous offre cette vue :
+
+
+
