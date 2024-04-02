@@ -1,5 +1,5 @@
 
-# Dépot projet, Flight Viewer
+# Dépôt projet, Flight Viewer
 
 J'ai repris ce dépôt qui, à la base, était un template de documentation Sphinx, pour y mettre la documentation anisi que le code de mon projet.
 
